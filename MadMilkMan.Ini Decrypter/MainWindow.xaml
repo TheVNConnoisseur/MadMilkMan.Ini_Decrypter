@@ -1,0 +1,15 @@
+﻿<Window x:Class="MadMilkMan.Ini_Decrypter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MadMilkMan.Ini_Decrypter"
+        mc:Ignorable="d"
+        Title="MadMilkMan.Ini Decrypter" Height="286" Width="474" ResizeMode="CanMinimize">
+    <Canvas Margin="0,0,0,-6" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <TextBox x:Name="encryptionPasswordTextBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Width="293" Height="16" ToolTip="" Canvas.Left="-117" Canvas.Top="-8" TextChanged="encryptionPasswordTextBox_TextChanged"/>
+        <TextBlock x:Name="encryptionPasswordLabel" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Center" RenderTransformOrigin="0.564,0.955" ToolTip="Here you have to type the password that has encrypted the .ini file. Typically this can be found embedded inside the main executable file (if it is a C# compiled one, use something like dnSpy or ILSpy)." Canvas.Left="-192" Canvas.Top="-8"/>
+        <Button x:Name="inputFileButton" Content="Select file" HorizontalAlignment="Left" Height="33" VerticalAlignment="Center" Width="118" Canvas.Left="-60" Canvas.Top="-85" Click="inputFileButton_Click"/>
+        <Button x:Name="convertFileButton" Content="Convert file" Height="33" Width="118" Canvas.Left="-60" Canvas.Top="53" HorizontalAlignment="Left" VerticalAlignment="Center" IsEnabled="False" AutomationProperties.HelpText="" ContentStringFormat="" Click="convertFileButton_Click"/>
+    </Canvas>
+</Window>
